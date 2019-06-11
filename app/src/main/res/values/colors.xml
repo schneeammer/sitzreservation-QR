@@ -28,4 +28,16 @@
     <color name="colorPrimary">#34495e</color>
     <color name="colorPrimaryDark">#2c3e50</color>
     <color name="colorAccent">#2980b9</color>
+    <color name="good">#ff99cc00</color>
+    <color name="goodText">#ff669900</color>
+    <color name="bad">#ffff4444</color>
+    <color name="badText">#ffcc0000</color>
+    <color name="initial">#000000</color>
+    <color name="initialText">#838383</color>
+    <color name="seatFree">#ff99cc00</color>
+    <color name="seatClaimed">#afafaf</color>
+    <color name="seatFreeSelected">#ff669900</color>
+    <color name="seatClaimedSelected">#ffdf0c</color>
+    <color name="seatCheckedIn">#ffff4444</color>
+
 </resources>

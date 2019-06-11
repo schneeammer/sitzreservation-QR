@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:title="@string/pref_cat_load">
+        <EditTextPreference
+            android:title="@string/pref_event_key"
+            android:key="event_key"
+            android:summary="@string/pref_summary_event_key"/>
+
+        <EditTextPreference
+            android:key="year"
+            android:title="@string/pref_year"
+            android:summary="@string/pref_summary_year"
+            android:numeric="integer"
+            android:maxLength="4"
+            />
+        <Preference android:title="@string/pref_fetch_data"
+            android:key="old_loadDataButton"
+            android:summary="@string/pref_summary_fetch_data"/>
+        <!--
+        <com.snowbunting.tvm.ButtonPreference
+            android:key="loadDataButton"
+            android:summary="@string/pref_summary_fetch_data"
+            android:title="@string/pref_fetch_data"
+            android:widgetLayout="@layout/load_data_button" />
+        -->
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:title="@string/pref_cat_delete">
+
+        <Preference android:title="@string/pref_delete"
+            android:key="delete_button"
+            android:summary="@string/pref_summary_delete"/>
+
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

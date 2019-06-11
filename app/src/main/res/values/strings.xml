@@ -25,8 +25,56 @@
   -->
 
 <resources>
-    <string name="app_name">QR Code</string>
+    <string name="app_name">Chränzli</string>
     <string name="title_camera">Camera</string>
     <string name="title_history">History</string>
     <string name="title_info">Info</string>
+    <string name="title_room">Room</string>
+    <string name="flash_off">Flash OFF</string>
+    <string name="flash_on">Flash ON</string>
+    <string name="instructions">Instructions</string>
+    <string name="settings">Settings</string>
+    <string name="info_init">Click on Settings to check the event key and load data.</string>
+    <string name="popup_failed">Failed. Check internet!</string>
+    <string name="popup_success">Reservations loaded.</string>
+    <string name="popup_no_reservation">No reservations! Check key</string>
+    <string name="url">https://www.tvmettmenstetten.ch/sitzreservation/index.cgi</string>
+    <string name="fetch_data">Fetching data...</string>
+    <string name="instructions_text">First, adjust the \'Event key\' in the Settings. You find this key as first part of all bill numbers coming from the reservation tool.\n\nThen click on \'Fetch data\' to load the reservations online. The bought seats will appear green, free ones are gray.\n\nNow use the QR scanner or select the seats manually and press \'Check in\'.\n\nAt the end of the day you can delete the data in the settings to be ready for the next event.</string>
+    <string name="okay">Ok</string>
+    <string name="info_text"><![CDATA[This is a tool that works together with the website tvmettmenstetten.ch/sitzreservation.\n\n  Created by Jon, 2019. \n\n (Thank you @Mauricio Giordano <github.com/mauriciogior/open-qrcode> for the template!)]]></string>
+    <string name="info">Info</string>
+    <string name="cancel">Cancel</string>
+    <string name="share">Share</string>
+    <string name="copy">Copy</string>
+    <string name="title">Chränzli</string>
+    <string name="invalid">Invalid</string>
+    <string name="unknown_qr">Unknown code</string>
+    <string name="wrong_checksum">Wrong checksum</string>
+    <string name="menu_sing">Menu</string>
+    <string name="menu_pl">Menus</string>
+    <string name="already_checked_in">Already checked-in.</string>
+    <string name="default_key">None</string>
+    <string name="not">not</string>
+    <string name="key">key</string>
+    <string name="wrong_year">Wrong year</string>
+    <string name="failed_copy_text">Failed to copy text.</string>
+    <string name="copy_clipboard">Text copied to clipboard!</string>
+    <string name="remove">Remove</string>
+    <string name="confirm_remove">Are you sure you want to remove those items?</string>
+    <string name="items_selected_pl">items selected</string>
+    <string name="items_selected_sing">item selected</string>
+    <string name="deleted">Deleted.</string>
+    <string name="delete_all">Delete all?</string>
+    <string name="confirm">Confirm</string>
+    <string name="pref_event_key">Event key</string>
+    <string name="pref_summary_event_key">This is the first part of the bill numbers (e.g. SA1 in SA1-EUG-021)</string>
+    <string name="pref_year">Year</string>
+    <string name="pref_summary_year">If not set, it will take the current year.</string>
+    <string name="pref_fetch_data">Fetch data</string>
+    <string name="pref_summary_fetch_data">Click to load the data from tvmettmenstetten.ch/sitzreservation</string>
+    <string name="pref_cat_delete">Delete data</string>
+    <string name="pref_delete">Delete data</string>
+    <string name="pref_summary_delete">Click to delete all reservations and all checked-in seats. Can not be undone.</string>
+    <string name="pref_cat_load">Load data</string>
 </resources>

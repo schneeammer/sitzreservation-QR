@@ -5,21 +5,32 @@
     <item
         android:id="@+id/action_flash_on"
         android:icon="@drawable/ic_flash_on"
-        android:title="Flash ON"
+        android:title="@string/flash_on"
         android:showAsAction="always"
-        app:showAsAction="always" />
+        app:showAsAction="ifRoom" />
 
     <item
         android:id="@+id/action_flash_off"
         android:icon="@drawable/ic_flash_off"
-        android:title="Flash OFF"
+        android:title="@string/flash_off"
         android:showAsAction="always"
-        app:showAsAction="always" />
+        app:showAsAction="ifRoom" />
 
     <item
         android:id="@+id/menu_info"
         android:icon="@drawable/ic_info"
         android:title="@string/title_info"
+        android:showAsAction="never"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/menu_instructions"
+        android:icon="@drawable/ic_info"
+        android:title="@string/instructions"
+        android:showAsAction="never"
+        app:showAsAction="never" />
+
+    <item android:title="@string/settings"
+        android:id="@+id/menu_settings"
         android:showAsAction="never"
         app:showAsAction="never" />
 

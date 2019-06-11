@@ -38,10 +38,66 @@
         android:layout_height="0dp"
         android:layout_weight="1">
 
-        <me.dm7.barcodescanner.zxing.ZXingScannerView
-            android:id="@+id/scannerView"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            android:layout_height="match_parent"
+            android:id="@+id/mainView"
+            android:orientation="vertical">
+
+
+            <me.dm7.barcodescanner.zxing.ZXingScannerView
+                android:id="@+id/scannerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Next"
+                    android:visibility="gone"
+                    android:id="@+id/continueScanning"/>
+
+                <TextView
+                    android:id="@+id/infoBillNr"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@color/initial"
+                    android:gravity="right"
+                    android:text=""
+                    android:textColor="@color/initialText"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/infoSeats"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/infoBillNr"
+                    android:background="@color/initial"
+                    android:gravity="center"
+                    android:text="Ready to Scan"
+                    android:textColor="@color/initialText"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:id="@+id/infoMenu"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/infoSeats"
+                    android:background="@color/initial"
+                    android:gravity="top|center"
+                    android:text=""
+                    android:textColor="@color/initialText"
+                    android:textSize="20sp" />
+            </RelativeLayout>
+
+        </LinearLayout>
 
         <ListView
             android:id="@+id/listView"
@@ -50,13 +106,129 @@
             android:background="@android:color/white"
             android:visibility="gone" />
 
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/roomView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal"
+                android:textColor="@color/initialText"
+                android:background="@color/initial">
+
+                <TextView
+                    android:id="@+id/textFree"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Free:"
+                    android:textColor="@color/initialText"
+                    android:layout_alignParentLeft="true"/>
+                <TextView
+                    android:id="@+id/textNumberFree"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="10"
+                    android:textColor="@color/initialText"
+                    android:layout_toRightOf="@+id/textFree"
+                    android:paddingLeft="5dp"/>
+                <TextView
+                    android:id="@+id/textNumberTotal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="/294"
+                    android:textColor="@color/initialText"
+                    android:layout_toRightOf="@+id/textNumberFree"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="right"
+                    android:text="Check in"
+                    android:id="@+id/checkInButton"
+                    android:layout_alignParentRight="true"/>
+            </RelativeLayout>
+
+            <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/initial"
+                android:fillViewport="true"
+                android:textColor="@color/initialText"
+                >
+
+                <LinearLayout
+                    android:id="@+id/seatGrid"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+
+                </LinearLayout>
+
+            </ScrollView>
+        </LinearLayout>
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/loadView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_vertical"
+            android:visibility="gone"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Event key:" />
+
+            <EditText
+                android:id="@+id/editText2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Sa01" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Load CSV file:" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Load" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="." />
+        </LinearLayout>
+
+
     </RelativeLayout>
+
 
     <android.support.design.widget.BottomNavigationView
         android:id="@+id/navigation"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="?android:attr/windowBackground"
+        app:itemIconTint="@color/initialText"
+        app:itemTextColor="@color/initialText"
+        android:background="@color/initial"
+
         app:menu="@menu/navigation" />
 
 </LinearLayout>
