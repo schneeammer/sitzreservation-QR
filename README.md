@@ -2,7 +2,7 @@
 
 This app works together with my Python-based webtool for selling seats at a local event. The website produces a ticket with QR code and RSA signature and this app can be used to check in those tickets.
 
-The seat order is hard-coded, at the moment there is no intent to change that.
+The seat arrangment is hard-coded, at the moment there is no intent to change that.
 
 ## Usage
 The created QR codes contain text with info about the year, bill number, seats, and number of ordered menus:
